@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+   
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  float: right;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid black;
+}
+.button1:hover {
+  background-color: #f44336;
+  color: white;
+}
+ 
+
+input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  margin-left: 720px;
+  font-size: 17px;
+  border: none;
+  float:right;
+  background:black;}
+
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+ .search-container button:hover {
+  background: #ccc;
+}
+.search-container {
+  float: right;
+}
+
+
+</style>
+</head>
+<body>
+  <div>
+<img src="one.png" height="90" width="90">
+<button class="button button1">Register</button>
+<button class="button button1">Login</button>
+</div>
+<ul>
+  <li><a href="#home">Home</a></li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Notebooks</a>
+    <div class="dropdown-content">
+      <a href="#">Rough Books</a>
+      <a href="#">White Books</a>
+      <a href="#">Binding Books</a>
+      <a href="#">Attendance Books</a>
+      <a href="#">Graph Books</a>
+      <a href="#">Practical Books</a>
+      <a href="#">Spiral Books</a>
+    </div>
+  </li>
+  <li><a href="#Geo">Geo Box</a></li> 
+   <li><a href="#Art">Art Stationary</a></li>
+   <li><a href="#Easy Order">Easy Order</a></li>
+<li><br/></li>
+<li><br/></li>
+    <li>
+      <div class="search-container">
+    <button type="submit"><i class="fa fa-search"></i></button>
+    <input type="text" placeholder="Search entire text" name="search">
+
+  </div>
+</li>
+</ul>
+
+
+</body>
+</html>
